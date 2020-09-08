@@ -17,8 +17,7 @@ String formatRawString(String rawString, NumpadFormat format) {
 
 String _numberStringToDollarString(String valueString) {
   var rawString = valueString.padLeft(3, '0');
-  var dollarString = '\$' +
-      rawString.substring(0, (rawString.length - 2)) +
+  var dollarString = rawString.substring(0, (rawString.length - 2)) +
       '.' +
       rawString.substring(rawString.length - 2);
   return dollarString;
