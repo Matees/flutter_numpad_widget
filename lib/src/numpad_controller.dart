@@ -78,7 +78,7 @@ class NumpadController with ChangeNotifier {
         maxRawLength = 10;
         break;
       case NumpadFormat.CURRENCY:
-        defaultHintText = '\$0.00';
+        defaultHintText = '0.00';
         maxRawLength = 6;
         break;
       case NumpadFormat.PHONE:
